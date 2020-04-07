@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/coordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarSizeLarge"
+        app:layout_scrollFlags="enterAlways|snap"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary"
+        tools:ignore="MissingConstraints">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="70dp">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="20dp"
+
+         >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:fontFamily="@font/mmedium"
+                android:text="@string/register_merchant" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputMerchantName"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextMerchantName"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/merchant_name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputBusinessType"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/merchant_business"
+                    style="@style/InputLabel" />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/chooseBusiness"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorPrimary"
+                    style="@style/modifiedEditText">
+
+                </androidx.appcompat.widget.AppCompatSpinner>
+
+                <View
+                    android:layout_marginRight="@dimen/margin5"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"></View>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputMerchantCity"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextMerchantCity"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/merchant_city"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputMerchantAddress"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextMerchantAddress"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/merchant_address"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:fontFamily="@font/mmedium"
+                android:text="@string/register_account" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInpuFullName"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextFullname"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/name_hint"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/login_username_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPhone"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPhone"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/login_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPasswordConfirm"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPasswordConfirm"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/password_confirm_hint"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/registerNow"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/register" />
+
+            <TextView
+                android:id="@+id/readyAccount"
+                style="@style/parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin20"
+                android:text="@string/account_ready"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

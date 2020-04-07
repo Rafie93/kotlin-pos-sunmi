@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:padding="@dimen/margin20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/margin20"
+                android:id="@+id/txtReview"
+                style="@style/viewParent"
+                android:text="@string/set_discount"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+            <EditText
+                android:layout_marginTop="@dimen/margin10"
+                android:id="@+id/editTextDiscount"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:inputType="number"
+                android:ems="10"
+                android:text="0"
+                android:background="@drawable/custom_border_edittext"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center" />
+
+
+            <Button
+                android:id="@+id/buttonSaveDiscount"
+                style="@style/loginButton"
+                android:layout_margin="@dimen/margin10"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:text="SET"/>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

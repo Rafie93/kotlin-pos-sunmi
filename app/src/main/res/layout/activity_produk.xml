@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.produk.ProdukActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbarSizeLarge"
+                    app:layout_scrollFlags="enterAlways|snap"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:navigationIcon="?attr/homeAsUpIndicator"
+                    app:title="Produk"
+                    app:titleTextColor="@color/colorWhite">
+                </androidx.appcompat.widget.Toolbar>
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:cardElevation="@dimen/card_elevation_6dp"
+        app:cardCornerRadius="8dp"
+        app:layout_anchor="@id/appbarMain"
+        app:layout_anchorGravity="bottom">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <SearchView
+                android:focusable="true"
+                android:id="@+id/searchText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </SearchView>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiptToRefresh"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/recyclerView"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addNewProduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                android:layout_margin="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

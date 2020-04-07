@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.account.AccountFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="Account"
+            app:titleTextColor="@color/colorWhite"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:visibility="visible"
+                    android:id="@+id/profileCircleImageView"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_image_choose"
+                    android:elevation="5dp"/>
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    style="@style/viewParent.headerText"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/profileCircleImageView"
+                    android:textColor="#5D5C5C"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:id="@+id/editTextEmail"
+                    android:layout_below="@id/usernameTextView"
+                    android:layout_toRightOf="@id/profileCircleImageView"
+                    android:text=""
+                    android:textColor="#5D5C5C"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="Profile" />
+
+            <TextView
+                android:id="@+id/txtEditProfile"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_edit_profil"
+                android:text="@string/edit_profile" />
+
+
+            <TextView
+                android:id="@+id/txtChangePassword"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_edit_password"
+                android:text="@string/change_password" />
+
+            <TextView
+                android:id="@+id/txtShop"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_049_shop"
+                android:text="@string/merchant_store" />
+
+            <TextView
+                android:id="@+id/txtLogout"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_log_out"
+                android:text="@string/logout"
+                tools:ignore="OnClick" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

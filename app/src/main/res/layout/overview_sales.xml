@@ -1,0 +1,75 @@
+<LinearLayout android:id="@+id/totalSales"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/this_day"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtSalesDay"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@color/colorBlue"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/this_month"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/txtSalesMonth"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:text="0"
+            android:textColor="@color/colorBlue"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

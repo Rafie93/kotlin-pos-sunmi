@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".ui.walkthrough.WelcomeTwoActivity">
+
+
+
+    <ImageView
+        android:id="@+id/image_intro"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/intro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/headertitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mmedium"
+        android:text="@string/intro_header2"
+        android:textColor="@color/blueSecond"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_intro"
+        tools:layout_editor_absoluteY="443dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="250dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mlight"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/intro_detail2"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintTop_toBottomOf="@+id/headertitle"
+        tools:layout_editor_absoluteY="504dp" />
+
+
+    <Button
+        android:id="@+id/startContinue"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin20"
+        android:background="@drawable/button_round_background"
+        android:fontFamily="@font/mmedium"
+        android:text="Start Application"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

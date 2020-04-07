@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">POS ZerOne</string>
+    <string name="app_version">ZerOne-POS v1.0</string>
+    <string name="intro_header">Welcome to ZerOne POS</string>
+    <string name="intro_detail">feel the comfort of your sales and purchases and monitor your income with the zerone pos application</string>
+    <string name="intro_header2">Save Your Product</string>
+    <string name="intro_detail2">Save your product for sales stock,and monitoring stock your product with the zerone pos application </string>
+    <string name="fitur_not_found">Fitur not ready</string>
+    <string name="enter_again">Press again to exit.</string>
+    <string name="product_deleted">The product was successfully deleted</string>
+    <string name="product_updated">Product Updated Successfully</string>
+    <string name="product_added">Product Successfully Added to the Server</string>
+    <string name="permission_access_camera">Permission to access the camera is required</string>
+    <string name="permission_required">Permission required</string>
+
+    <string name="cashier">Cashier</string>
+
+    <string name="detail_transaction"> Perform sales of goods to customers </string>
+     
+    <string name="detail_purchase"> Purchase the product from the supplier for the transaction, the product stock will increase </string>
+        
+    <string name="detail_product"> Manage product data, can add products to transactions </string>
+        
+    <string name="detail_profit"> Monitor sales results and get profit information from transactions </string>
+        
+    <string name="detail_stock"> Manage your product stock data for updating </string>
+
+    <string name="required">required</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="edit_produk">Edit Product</string>
+    <string name="tambah_produk">Add New Product</string>
+    <string name="preview_transaksi">Preview Transaction</string>
+    <string name="source_image">Select Image Source</string>
+    <string name="image_gallery">Choose Image from Gallery</string>
+    <string name="image_camera">Take a Picture from the Camera</string>
+    <string name="history_transaction"> Sales History </string>
+    <string name="passwordOld">Password Old</string>
+    <string name="passwordNew">Password New</string>
+
+
+    <string name="otp_header">Verify Your Email</string>
+    <string name="otp_txt">OTP has been send to your email please check your email</string>
+    <string name="registrasi_success">Congratulations Your registration has been successful, please press the login button below to enter the application dashboard. You can add other users to your business and get integration of your transactions and profits at other branches. \nThank you</string>
+
+    <string name="best_selling">This months best-selling product</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_account">Account</string>
+    <string name="title_history">History</string>
+    <string name="title_report">Report</string>
+
+    <string name="menu_buy">Product Purchase</string>
+    <string name="menu_sale">Transaction</string>
+    <string name="menu_product">Product</string>
+    <string name="menu_dt">Discounts and Taxes</string>
+    <string name="menu_profit">Profits</string>
+    <string name="menu_stock">Stock Management</string>
+    <string name="merchant_store">Merchant / Store</string>
+
+    <string name="total_sales">Total Sales</string>
+    <string name="transaction">Transaction</string>
+
+    <string name="this_day">This Day</string>
+    <string name="this_week">This Week</string>
+    <string name="this_month">This Month</string>
+
+    <string name="login_username_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="password_confirm_hint">Password Confirmation</string>
+
+    <string name="name_hint">Name</string>
+    <string name="phone_hint">Phone</string>
+    <string name="merchant_name">Merchant Name</string>
+    <string name="merchant_business">Business Type</string>
+    <string name="merchant_city">Merchant City </string>
+    <string name="merchant_address">Merchant Address </string>
+
+    <string name="login_forgot">Forgot Password</string>
+    <string name="newuser">New User? Registration NOW</string>
+    <string name="account_ready">Already have an account? Login Now</string>
+
+    <string name="loginmetod">Use other Methods</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="register_account">Register Account</string>
+    <string name="register_merchant">Register Merchant</string>
+    <string name="password_not_same">Password Confirm Not Same with your password</string>
+
+    <string name="add_note">ADD NOTE</string>
+
+    <string name="stok_ready">stock ready</string>
+    <string name="check_out">CHECK OUT</string>
+    <string name="total_sementara">Temporary Total</string>
+    <string name="grand_total">Grand Total</string>
+    <string name="search_hint">search</string>
+    <string name="tax">Tax</string>
+    <string name="discount">Discount</string>
+    <string name="additional">Additional</string>
+    <string name="pay">Pay</string>
+    <string name="note">Note</string>
+    <string name="change">Change</string>
+    <string name="invoice">Invoice</string>
+    <string name="cash">Cash</string>
+    <string name="choose_pay">Select Payment</string>
+    <string name="review_pay">Preview Your Transaction</string>
+    <string name="success_pay">Success Your Transaction</string>
+
+    <string name="proses">PROSES</string>
+    <string name="addtional_note">Additional Note</string>
+    <string name="set_tax">Set Tax Transaction (%)</string>
+    <string name="set_discount">Set Discount Transaction (%)</string>
+    <string name="set_additional">Set Additional Cost (%)</string>
+
+    <string name="print">PRINT</string>
+    <string name="exit">EXIT</string>
+    <string name="new_transaction">NEW TRANSACTION</string>
+    <string name="save">SAVE</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="setting">Setting</string>
+    <string name="logout">Log Out</string>
+
+    <string name="product_name">Product Name</string>
+    <string name="product_basic_price">Basic Price</string>
+    <string name="product_selling_price">Selling Selling</string>
+    <string name="category">Category</string>
+    <string name="description">Description</string>
+    <string name="is_stock">In Stock</string>
+    <string name="unit">Unit</string>
+
+    <string-array name="arrBusinessType">
+        <item>Lain-Lain</item>
+        <item>Bahan Makanan</item>
+        <item>Usaha Kecil</item>
+        <item>Otomotif</item>
+        <item>Layanan</item>
+        <item>Shopping</item>
+        <item>Utilitas</item>
+        <item>ATK</item>
+        <item>Hiburan/Mainan</item>
+    </string-array>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/coordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity"
+    android:background="@color/colorWhite">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/imageLogin"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/zeronepos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <LinearLayout
+        android:paddingTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:padding="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputEmail"
+            style="@style/parentWhiteTheme"
+            android:layout_marginTop="@dimen/margin10">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextEmail"
+                style="@style/modifiedEditTextThemeLight"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:hint="@string/login_username_hint"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputPassword"
+            style="@style/parentWhiteTheme"
+            android:layout_marginTop="@dimen/margin10">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextPassword"
+                style="@style/modifiedEditTextThemeLight"
+                android:hint="@string/login_password_hint"
+                android:maxLines="1"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtForgot"
+            style="@style/viewParent"
+            android:text="@string/login_forgot"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/loginButton"
+            style="@style/loginButton"
+            android:text="@string/login"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_gravity="center"
+            style="@style/parent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:text="@string/newuser"
+            android:layout_marginTop="@dimen/margin20" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

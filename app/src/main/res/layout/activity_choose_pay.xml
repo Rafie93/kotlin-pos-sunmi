@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.transaction.ChoosePayActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="enterAlways|snap"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:navigationIcon="?attr/homeAsUpIndicator"
+            app:title="@string/preview_transaksi"
+            app:titleTextColor="@color/colorWhite">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtProduk"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/review_pay"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/invoice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtOrderID"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="OD 3457778"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/total_sales"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Rp. 15.500"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/additional"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtAdditional"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/discount"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtDiscount"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="0%"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/tax"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtTax"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="0%"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/grand_total"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtGrant"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="Rp. 15.500"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/pay"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtBayar"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="20.000"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/change"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/txtKembali"
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="4.500"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@color/colorGrey"></View>
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_marginTop="@dimen/margin10"
+                android:text="@string/choose_pay"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/payCash"
+                android:layout_marginTop="@dimen/margin5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin10"
+                android:layout_marginRight="@dimen/margin10"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgRp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:src="@drawable/ic_rp"/>
+
+                    <TextView
+                        android:id="@+id/txtCast"
+                        style="@style/viewParent.headerText.settingsTextIcon"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin10"
+                        android:layout_toRightOf="@+id/imgRp"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/cash"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

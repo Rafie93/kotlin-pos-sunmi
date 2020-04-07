@@ -1,0 +1,25 @@
+package com.zerone.zerone_pos.helpers
+
+object Const {
+
+    val TOKEN_LOGIN = "TOKEN_LOGIN"
+    val IS_LOGIN = "IS_LOGIN"
+    val IS_NOTFIRSTAPP = "IS_FIRSTAPP"
+
+    val USER_ID="USER_ID"
+    val USER_NAMA="USER_NAME"
+    val USER_EMAIL="USER_EMAIL"
+    val USER_TELP ="USER_TELP"
+    val USER_IMAGE ="USER_IMAGE"
+
+    val MERCHANT_NAME = "MERCHANT_NAME"
+    val MERCHANT_CITY = "MERCHANT_CITY"
+    val MERCHANT_LOGO = "MERCHANT_LOGO"
+    val MERCHANT_ADDRESS = "MERCHANT_ADDRESS"
+
+    val TAX ="TAX"
+    val DISCOUNT = "DISCOUNT"
+    val ADDITIONAL = "ADDITIONAL"
+    val CART_PRODUK = "CART_PRODUK"
+
+}

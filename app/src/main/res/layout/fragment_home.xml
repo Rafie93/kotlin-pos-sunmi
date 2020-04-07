@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/collapBarSize"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/collapBarSize">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/toolbarSizeLarge"
+                    app:layout_scrollFlags="enterAlways|snap"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="center"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Sales \nRp. 0"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:id="@+id/txtSalesTotal"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_wave_white_2x" />
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSales"
+        android:background="@drawable/bg_rounded_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        app:cardElevation="@dimen/card_elevation_6dp"
+        app:cardCornerRadius="8dp"
+        app:layout_anchor="@id/appbarMain"
+        app:layout_anchorGravity="bottom">
+        <include layout="@layout/overview_sales"></include>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:background="@color/colorGrey"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/item_chat_sales"/>
+            <include layout="@layout/item_menu_transaksi"/>
+            <include layout="@layout/item_menu_produk"/>
+            <include layout="@layout/item_menu_stock"/>
+            <include layout="@layout/item_menu_pembelian"/>
+            <include layout="@layout/item_menu_profit"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

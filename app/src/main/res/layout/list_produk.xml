@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cardProduct"
+    android:padding="@dimen/margin5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:paddingTop="@dimen/margin5"
+        android:paddingLeft="@dimen/margin10"
+        android:paddingRight="@dimen/margin10"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/produkImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_021_package"/>
+
+        <TextView
+            android:id="@+id/produkName"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/produkImage"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorBlack"
+            android:text="Judul"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin5"
+            android:id="@+id/produkStok"
+            android:layout_below="@+id/produkName"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/produkImage"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="90"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin5"
+            android:layout_below="@+id/produkName"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/produkStok"
+            android:textStyle="italic"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/stok_ready"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/produkName"
+            android:id="@+id/produkPriceSelling"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text=""/>
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

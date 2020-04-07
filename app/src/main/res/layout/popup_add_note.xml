@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:padding="@dimen/margin20"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/margin20"
+                android:id="@+id/txtReview"
+                style="@style/viewParent"
+                android:text="@string/addtional_note"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+            <EditText
+                android:id="@+id/editTextNotePop"
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="@dimen/margin10"
+                android:background="@drawable/custom_border_edittext"
+                android:ems="10"
+                android:hint="Tulis disini..."
+                android:gravity="left"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold"/>
+
+
+
+            <Button
+                android:id="@+id/buttonSaveNote"
+                style="@style/loginButton"
+                android:layout_margin="@dimen/margin10"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:text="SET"/>
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

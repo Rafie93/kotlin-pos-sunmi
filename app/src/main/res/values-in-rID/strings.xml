@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">POS ZerOne</string>
+    <string name="app_version">ZerOne-POS v1.0</string>
+    <string name="intro_header">Selamat Datang di \nAplikasi ZerOne POS</string>
+    <string name="intro_detail">Rasakan kenyamanan penjualan dan pembelian Anda dan pantau penghasilan Anda dengan aplikasi pos nol</string>
+    <string name="intro_header2">Simpan Produk Anda</string>
+    <string name="intro_detail2">Simpan produk Anda untuk stok penjualan, dan pantau stok produk Anda dengan aplikasi pos nol </string>
+
+    <string name="otp_header">Verifikasi Email Anda</string>
+    <string name="otp_txt"> OTP telah dikirim ke email Anda, silakan periksa email Anda </string>
+    <string name="registrasi_success"> Selamat pendaftaran Anda telah berhasil, silakan tekan tombol login di bawah ini untuk masuk ke dasbor aplikasi. Anda dapat menambahkan pengguna lain ke bisnis Anda dan mendapatkan integrasi transaksi dan keuntungan Anda di cabang lain. \ nTerima kasih </string>
+
+    <string name = "best_selling"> Produk terlaris bulan ini </string>
+     <string name = "title_home"> Rumah </string>
+     <string name = "title_dashboard"> Dasbor </string>
+     <string name = "title_notifications"> Notifications </string>
+     <string name = "title_account"> Akun </string>
+     <string name = "title_history"> History </string>
+     <string name = "title_report"> Laporan </string>
+
+    <string name = "menu_buy"> Pembelian Produk </string>
+     <string name = "menu_sale"> Transaksi </string>
+     <string name = "menu_product"> Produk </string>
+     <string name = "menu_dt"> Diskon dan Pajak </string>
+     <string name = "menu_profit"> Untung </string>
+     <string name = "menu_stock"> Manajemen Stok </string>
+
+    <string name = "total_sales"> Total Penjualan </string>
+     <string name = "transaction"> Transaksi </string>
+
+     <string name = "this_day"> Hari Ini </string>
+     <string name = "this_week"> Minggu Ini </string>
+     <string name = "this_month"> Bulan Ini </string>
+
+     <string name = "login_username_hint"> Email </string>
+     <string name = "login_password_hint"> Kata Sandi </string>
+     <string name = "password_confirm_hint"> Konfirmasi Kata Sandi </string>
+
+    <string name = "name_hint"> Nama </string>
+     <string name = "phone_hint"> Telepon </string>
+     <string name = "merchant_name"> Nama Merchant </string>
+     <string name = "merchant_business"> Jenis Bisnis </string>
+     <string name = "merchant_city"> Kota Merchant </string>
+     <string name = "merchant_address"> Alamat Merchant </string>
+
+    <string name = "login_forgot"> Lupa Kata Sandi </string>
+     <string name = "newuser"> Pengguna Baru? Registrasi SEKARANG </string>
+     <string name = "account_ready"> Sudah punya akun? Masuk Sekarang </string>
+
+     <string name = "loginmetod"> Gunakan Metode lain </string>
+     <string name = "login"> MASUK </string>
+     <string name = "register"> DAFTAR </string>
+     <string name = "register_account"> Daftar Akun </string>
+     <string name = "register_merchant"> Daftarkan Merchant </string>
+
+     <string name = "add_note"> + Catatan </string>
+
+    <string name = "stok_ready"> ready stock </string>
+     <string name = "check_out"> CHECK OUT </string>
+     <string name = "total_sementara"> Total Sementara </string>
+     <string name = "grand_total"> Grand Total </string>
+     <string name = "search_hint"> search </string>
+     <string name = "tax"> Pajak </string>
+     <string name = "discount"> Diskon </string>
+     <string name = "additional"> Tambahan </string>
+     <string name = "pay"> Pay </string>
+     <string name = "note"> Note </string>
+     <string name = "change"> Ubah </string>
+     <string name = "invoice"> Invoice </string>
+     <string name = "cash"> Cash </string>
+     <string name = "choose_pay"> Pilih Pembayaran </string>
+     <string name = "review_pay"> Pratinjau Transaksi Anda </string>
+     <string name = "success_pay"> Sukseskan Transaksi Anda </string>
+
+    <string name = "proses"> PROSES </string>
+     <string name = "addtional_note"> Catatan Tambahan </string>
+     <string name = "set_tax"> Tetapkan Transaksi Pajak (%) </string>
+     <string name = "set_discount"> Setel Transaksi Diskon (%) </string>
+     <string name = "set_additional"> Tetapkan Biaya Tambahan (%) </string>
+
+     <string name = "print"> CETAK </string>
+     <string name = "exit"> KELUAR </string>
+     <string name = "new_transaction"> TRANSAKSI BARU </string>
+     <string name = "save"> SIMPAN </string>
+     <string name = "delete"> HAPUS </string>
+     <string name = "update"> PERBAHARUI </string>
+
+    <string name="edit_profile">Ubah Profile</string>
+    <string name="change_password">Ubah Password</string>
+    <string name="setting">Pengaturan</string>
+    <string name="logout">Keluar</string>
+
+    <string-array name="arrBusinessType">
+        <item>Lain-Lain</item>
+        <item>Bahan Makanan</item>
+        <item>Usaha Kecil</item>
+        <item>Otomotif</item>
+        <item>Layanan</item>
+        <item>Shopping</item>
+        <item>Utilitas</item>
+        <item>ATK</item>
+        <item>Hiburan/Mainan</item>
+    </string-array>
+</resources>

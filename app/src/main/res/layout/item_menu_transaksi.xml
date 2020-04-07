@@ -1,0 +1,63 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:id="@+id/klikTransaksi"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_vertical_margin"
+    app:cardCornerRadius="2dp"
+    android:background="@color/colorGrey"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorWhite">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/colorPrimary"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingTop="@dimen/margin10"
+            android:paddingBottom="@dimen/margin5"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_049_shop"/>
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_toRightOf="@+id/imageLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_sale"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="250dp"
+                android:layout_below="@+id/header"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/detail_transaction"
+                android:textColor="@color/colorBlack2"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/imageLogo"/>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

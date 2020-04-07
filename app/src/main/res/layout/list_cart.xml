@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cardProduct"
+    android:padding="@dimen/margin5"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+    <RelativeLayout
+        android:padding="@dimen/margin5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:fontFamily="@font/mlight"
+            android:id="@+id/txtProdukName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_toLeftOf="@+id/layouAddJum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="Indomie ..... .  "/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/txtProdukName"
+            android:id="@+id/txtHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlueDark"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="10.000"/>
+
+        <RelativeLayout
+            android:id="@+id/layouAddJum"
+            android:layout_margin="@dimen/margin5"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_toLeftOf="@+id/edtQuantityItem"
+                android:id="@+id/btnRemoveItem"
+                android:padding="@dimen/margin5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_remove_circle_outline_24dp"/>
+
+            <EditText
+                android:focusable="false"
+                android:gravity="center"
+                android:id="@+id/edtQuantityItem"
+                android:layout_toLeftOf="@+id/btnAddLagi"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:text="1"
+                />
+            <ImageView
+                android:id="@+id/btnAddLagi"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/margin5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_add_circle_outline_24dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

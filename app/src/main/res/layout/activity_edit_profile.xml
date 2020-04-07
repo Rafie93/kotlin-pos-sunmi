@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/coordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.account.EditProfileActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarSizeLarge"
+        app:layout_scrollFlags="enterAlways|snap"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="@string/edit_profile"
+        app:titleTextColor="@color/colorWhite"
+        tools:ignore="MissingConstraints">
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="70dp">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:padding="20dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_image_choose"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInpuFullName"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextFullname"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/name_hint"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="@string/login_username_hint"
+                    android:inputType="textEmailAddress"
+                    android:enabled="false"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPhone"
+                style="@style/parentWhiteTheme"
+                android:layout_marginTop="@dimen/margin10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPhone"
+                    style="@style/modifiedEditTextThemeLight"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <Button
+                android:id="@+id/btnUpdate"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/update" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
